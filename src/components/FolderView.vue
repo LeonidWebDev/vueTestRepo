@@ -24,6 +24,30 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .folder{
-  color: orangered;
+  line-height: 160%;
+  font-size: 130%;
+  color: #C70554;
+
+  @media (min-width: 992px) {
+    display: inline-block;
+    width: 25%;
+  }
+  
+  @media (max-width: 992px) {
+    display: inline-block;
+    width: 33%;
+  }
+
+  @media (max-width: 768px) {
+    display: inline-block;
+    width: 50%;
+    
+  }
+
+  @media (max-width: 576px) {
+    display: block;
+    width: 100%;
+  }
+ 
 }
 </style>
