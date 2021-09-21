@@ -1,4 +1,4 @@
-# html vue test
+# this is simple VUE project
 
 ## Objective
 Provide a responsive presentation of files and folders in any style of your choice and publish on github pages
