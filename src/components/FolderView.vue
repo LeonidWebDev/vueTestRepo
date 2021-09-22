@@ -17,37 +17,32 @@ export default {
     name: String,
     folders:Array,
     files:Array
-  }
+  },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 .folder{
-  line-height: 160%;
-  font-size: 130%;
-  color: #C70554;
+  display: block;
+  width: 100%;
+  font-weight: bold;
+  font-size: 150%;
+  line-height: 200%;
+  border-bottom: 2px solid black;
+  color: #ffffff;
+  background-color: #000000;
+}
 
-  @media (min-width: 992px) {
-    display: inline-block;
-    width: 25%;
-  }
-  
-  @media (max-width: 992px) {
-    display: inline-block;
-    width: 33%;
-  }
+.folder:nth-child(2n) {
+  background-color: #242424;
+}
 
-  @media (max-width: 768px) {
-    display: inline-block;
-    width: 50%;
-    
-  }
-
-  @media (max-width: 576px) {
-    display: block;
-    width: 100%;
-  }
- 
+.folder:first-child {
+  font-size: 200%;
+  line-height: 250%;
+  background-color: #000000;
+  color: #fc8600;
 }
 </style>

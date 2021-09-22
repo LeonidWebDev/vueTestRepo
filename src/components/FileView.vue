@@ -1,5 +1,5 @@
 <template>
-  <p class="file">{{name}}</p>
+      <p class="file">{{name}}</p>
 </template>
 
 <script>
@@ -12,28 +12,32 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.file{
-  line-height: 150%;
-  color: #FF7486;
+  .file {
+  flex: 1 0 25%;
+  font-weight: 300;
+  line-height: 200%;
+  color: #7ee639;
+  border-bottom: 1px solid black;
+  background-color: #777777;
 
-  @media (min-width: 992px) {
-    display: inline-block;
-    width: 25%;
-  }
+  } 
 
   @media (max-width: 992px) {
-    display: inline-block;
-    width: 33%;
+    .file {
+      flex: 1 0 33%;
+    }
   }
 
   @media (max-width: 768px) {
-    display: inline-block;
-    width: 50%;
+    .file {
+      flex: 1 0 50%;
+    }
   }
 
   @media (max-width: 576px) {
-    display: block;
-    width: 100%;
+    .file {
+      flex: 1 0 100%;
+    }
   }
-}
+
 </style>
